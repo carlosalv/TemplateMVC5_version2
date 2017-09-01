@@ -7,28 +7,56 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Projeto Maven</title>
+
+<link href="/webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<!-- imagem -->
+<img src="usuario.jpg" class="img-rounded" alt="Cadastro" width="300%" height="300%">
 </head>
 <body>
-<h1>Registrar Usuário</h1>
-<form:form method="post" action="/user/register" modelAttribute="user"
-	role="form">
-	<div>
-	<form:input path="name" class="form-control"
-placeholder="Nome" required="required" />
-	</div>
-	<div>
-	<form:input path="email" class="form-control"
-placeholder="E-mail" required="required" />
-	</div>
-	<div>
-	<form:password path="pwd" class="form-control"
-placeholder="Senha" required="required" />
-	</div>
-	<div>
-<input type="submit" value="Confirmar">
-</div>
-</form:form>
+
+
+	<div class="container body-content">
+		<h1>Registrar Usuário</h1>
+		<hr align="center" width="100%" size="1" color=red>
+		<div class="col-md-4">
+
+			<form:form method="post" action="/user/register"
+				modelAttribute="user" role="form">
+				<div class="form-group">
+					<form:input path="name" class="form-control" placeholder="Nome"
+						required="required" />
+				</div>
+
+				<div class="form-group">
+					<form:input path="email" class="form-control" placeholder="E-mail"
+						required="required" />
+
+				</div>
+				
+				<div class="form-group">
+					<form:password path="pwd" class="form-control" placeholder="senha"
+						required="required" />
+
+				</div>
+
+				<div class="form-group">
+					 <input type="submit" class="btn btn-default" value="Confirmar"/> 
+					
+
+				</div>
+			</form:form>
+			</div>
+		</div>
+	
+	<hr align="center" width="100%" size="1" color="red">
+	<footer>
+		<p class="copyright text-muted small">Copyright &copy; CARLOS.BR 2017. ALL Rights Reserved</p>
+
+
+	</footer>
+
+
 </body>
 </html>
 
