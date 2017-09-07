@@ -1,5 +1,6 @@
 package br.estacio.controller;
 
+import javax.naming.Binding;
 //import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
