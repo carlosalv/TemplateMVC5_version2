@@ -14,10 +14,18 @@ import org.springframework.web.servlet.view.JstlView;
 public class WebConfig extends WebMvcConfigurerAdapter{
 	
 	@Override
+<<<<<<< HEAD
 	public void addResourceHandlers(final ResourceHandlerRegistry registry) {
 	registry.addResourceHandler("/resources/**").addResourceLocations("/resources/");
 	registry.addResourceHandler("/webjars/**").addResourceLocations("/webjars/");
 	}
+=======
+	public void addResourceHandlers (final ResourceHandlerRegistry registry ){
+	registry.addResourceHandler("/resources/**").addResourceLocations("/resources");
+	registry.addResourceHandler("/webjars/**").addResourceLocations("/webjars/");
+	}
+	
+>>>>>>> branch 'master' of https://github.com/carlosalv/TemplateMVC5_version2
 	
 	@Bean
 	public InternalResourceViewResolver viewResolver() {
@@ -26,6 +34,9 @@ public class WebConfig extends WebMvcConfigurerAdapter{
 	viewResolver.setPrefix("/WEB-INF/views/");
 	viewResolver.setSuffix(".jsp");
 	return viewResolver;
+	
+	
+	
 
 }
 }
