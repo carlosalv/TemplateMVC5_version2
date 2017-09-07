@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
 @RequestMapping("/home")
 public String home(ModelMap model) {
-return "home";
+return ("home");
 }
 }
