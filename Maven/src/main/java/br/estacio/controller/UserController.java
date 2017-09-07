@@ -1,8 +1,11 @@
 package br.estacio.controller;
 
+//import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
+//import org.hibernate.annotations.common.util.impl.Log_.logger;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -23,11 +26,17 @@ public class UserController {
 		}
 	
 	@RequestMapping(value = "register", method = RequestMethod.POST)
-	public ModelAndView postForm(@Valid @ModelAttribute("user") User user)
+	public ModelAndView postForm(@Valid @ModelAttribute("user") User user, BindingResult result)
 	{
-		ModelAndView model = new ModelAndView("home");
-		System.out.println(user);
-		model.addObject("msg", "OK");
+		ModelAndView model = new ModelAndView("registerForm");
+		
+		if(!result.hasErrors()){
+		
+			System.out.println(user);
+
+			model.addObject("msg", "OK");
+		}
+		
 		return model;
 	
 	
