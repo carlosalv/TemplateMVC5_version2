@@ -56,7 +56,7 @@
 					</div>
 
 					<div class="form-group">
-						<input type="submit" value="Confirmar" class="btn btn-default">
+						<input type="submit" value="Confirmar" class="btn btn-success">
 						
 
 					</div>
