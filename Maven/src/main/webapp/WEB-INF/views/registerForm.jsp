@@ -8,7 +8,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
-<title>Insert title here</title>
+<title>Projeto Maven</title>
 <!-- <link href="/webjars/bootstrap/3.3.6/css/bootstrap.min.css"
 	rel="stylesheet"> <img src="usuario.jpg" class="img-rounded" alt="Cadastro" width="300%" height="300%"> -->
 
